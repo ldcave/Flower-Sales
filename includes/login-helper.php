@@ -37,7 +37,7 @@ if (isset($_POST['login-submit'])){ //grab input from login page -- name we gave
                           $_SESSION['fname'] = $data['fname'];  //set names for array
                           $_SESSION['username'] = $data['uname'];
                           
-                          header("Location: ../profile.php?login=success");
+                          header("Location: ../profile.php?login=success"); //takes you to profile if login is successful
                             exit();
                       }
                       else{ //if password does not match
