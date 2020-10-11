@@ -7,7 +7,7 @@ require "includes/header.php"
       <div class = "h-100 container center-me">
         <div class = "my-auto">
         <div class "signup-form">
-          <form action "includes/signup-helper.php" method="post">
+          <form action="includes/signup-helper.php" method="post">
             <h2>Register</h2>
             <p class "hint-text">Create your account</p>
             <div class = "form-group">
@@ -36,7 +36,7 @@ require "includes/header.php"
               <button type ="submit" name="signup-submit" class= "btn btn-success">Sign Up</button>
             </div>
           </form>
-          <div class="text-center">Already a member? <a href="login.html">Sign in</a>
+          <div class="text-center">Already a member? <a href="login.php">Sign in</a>
         </div>
       </div>
       </div>
