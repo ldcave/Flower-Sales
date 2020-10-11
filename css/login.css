@@ -1,0 +1,30 @@
+.bg-cover{
+  background-image: url("/Users/leahcave/iCloudDesktop/lab/images/moreleaves.jpg"); 
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.center-me{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form-signin{
+  padding: 22px;
+  text-align: center;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+.button{
+  padding: 10px;
+  
+}
+}
+.carousel {
+  width: 200px;
+}
