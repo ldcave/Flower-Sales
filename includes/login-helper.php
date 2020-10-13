@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_POST['login-submit'])){ //grab input from login page -- name we gave to submit button
     require 'dbhandler.php';
     $uname_email = $_POST['uname'];

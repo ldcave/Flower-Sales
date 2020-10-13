@@ -1,7 +1,6 @@
 <?php
 require "includes/header.php"
 ?>
-
 <main>
     <div class = "bg-cover">
       <div class = "h-100 container center-me">

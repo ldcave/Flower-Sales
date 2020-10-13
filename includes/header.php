@@ -1,7 +1,6 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,7 +34,7 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 
-                <?php 
+                <?php
                 if (!isset($_SESSION['uid'])){ //as long as nothing is null go to profile
                     echo '<li class="nav-item">
                     <a class="nav-link" href="login.php">︙login</a>

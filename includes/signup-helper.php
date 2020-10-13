@@ -1,5 +1,4 @@
-<?php //dont need closer since all php
-
+<?php
   if(isset($_POST['signup-submit'])){   //make sure user submits a signup form. isset checks for null.
     require 'dbhandler.php';      //THIS EST CONNECTION WITH DB!! brings it in
 
@@ -48,6 +47,9 @@
               mysqli_stmt_bind_param($stmt,"sssss",$lname, $fname, $email, $username, $hashedPass); //s placeholder
               mysqli_stmt_execute($stmt);
               mysqli_stmt_store_result($stmt);
+
+              $sqlImg = "INSERT INTO profile (uname) VALUES ('$username')";
+              mysqli_query($conn, $sqlImg); //combines statements
 
               header("Location: ../signup.php?signup=success"); //produce success Message --DOESNT STORE
               exit();
