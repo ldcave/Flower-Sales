@@ -4,6 +4,7 @@ body{
 }
 .about{
   background: white;
+  justify-content: center;
  }
  .button{
    padding: 15px 32px;
@@ -21,7 +22,7 @@ body{
  }
  .card{
   box-shadow: 0px 9px 9px 0px #cfe0fc;
-  padding: 0px 16px
+  padding: 0px 20px
  }
 
  .nav-item{

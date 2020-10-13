@@ -2,9 +2,9 @@
   require 'includes/header.php'
 ?>
 <main>
-<link rel="stylesheet" href="/Users/leahcave/Desktop/lab/css/about.css">
+<link rel="stylesheet" href="../css/about.css">
     <div class = "about">
-        <h1 style = "color:#718ebd" >WHO ARE WE</h1>
+        <h1 style = "color:#718ebd" >who are we</h1>
         <p>❁ meet our people ❁</p>
     </div>
     <div class = "row">
@@ -16,8 +16,9 @@
 
                 <p style= "border:1px; border-style:double; border-color:#cfe0fc; padding: 0"><br> <b>Panama City, FL</b></p>
                 <button type="button">More</button>
-            </div>
+            </div>    
         </div>
+
       <div class = "column">
           <div class = "card">
             <img src = "images/barak.jpg">
@@ -27,6 +28,7 @@
               <button type="button">More</button>
           </div>
       </div>
+
       <div class = "column">
           <div class = "card">
             <img src = "images/tom.jpg">

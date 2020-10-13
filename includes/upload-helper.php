@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); //pulling a session-global variable
 
 define('KB', 1024);
 define('MB', 1048576); //space you want to give
@@ -21,12 +21,11 @@ if (isset($_POST['prof-submit'])) {
 
     $allowed = array('jpg', 'jpeg', 'png', 'svg');
 
-    if($file_error !== 0){ //if error during upload
+    if ($file_error !== 0){ //if error during upload
         header("Location: ../profile.php?error=UploadError");
         exit();
     }
-
-    if(!in_array($ext, $allowed)){      //is file acceptable type
+    if (!in_array($ext, $allowed)){      //is file acceptable type
         header("Location: ../profile.php?error=InvalidType");
         exit();
     }
@@ -35,8 +34,9 @@ if (isset($_POST['prof-submit'])) {
         exit();
     }
     else{
+
         $new_name = uniqid('',true).".".$ext; //this is new name
-        $destination = '../uploads/'.$new_name;
+        $destination = '../uploads/'.$new_name;     //has to be in uploads
 
         $sql = "UPDATE profile SET picpath=?, bio=? WHERE uname=?"; //replace 3 of these values ???
         $stmt = mysqli_stmt_init($conn);
@@ -45,7 +45,7 @@ if (isset($_POST['prof-submit'])) {
             header("Location: ../profile.php?error=SQLInjection");
             exit();
         }else{
-            mysqli_stmt_bind_param($stmt,"sss",$destination, $bio, $uname); //s placeholder
+            mysqli_stmt_bind_param($stmt, "sss", $destination, $bio, $uname); //s placeholder
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
 

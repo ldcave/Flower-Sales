@@ -3,11 +3,11 @@ h1 {
 }
 
 h3{
-   color: goldenrod;
+   color: white;
 }
 
 p{
-  color:grey   
+  color:black
 }
 
 img{
@@ -34,7 +34,7 @@ img{
 
 }
 .gallery-container a{
-    background-color: hotpink;
+    background-color: rgb(211, 233, 241);
     background-position: center;
     background-size: cover;
 
@@ -42,5 +42,5 @@ img{
 
 .gallery-container a:hover{
     opacity: 90%;
-    text-decoration-color: goldenrod;
+    text-decoration-color: rgb(77, 120, 199);
 }

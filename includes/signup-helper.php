@@ -11,11 +11,11 @@
       //grabbing all user input data
 
       if ($passw !== $pass_rep){    //make sure passwords are equal
-        header("Location: ../signup.php?error=diffPasswords&fname=".$fname."&lname=".$lname."&uname=".$username);
+        header("Location: ../signup.php?error=diffPasswords&fname=".$fname."&lname=".$lname."&uname=".$username); //if not reload signup page
         exit();
       }
       else {      //passwords good
-        $sql = "SELECT uname FROM users WHERE uname=?"; //select uname field from table and iterate through so no duplicates
+        $sql = "SELECT uname FROM users WHERE uname=?;";     //select uname field from table and iterate through so no duplicates
         $stmt = mysqli_stmt_init($conn); //connect to database
         
         if (!mysqli_stmt_prepare($stmt, $sql)){
@@ -23,7 +23,7 @@
           exit();
         }
         else{
-          mysqli_stmt_bind_param($stmt,"s",$username); //s placeholder
+          mysqli_stmt_bind_param($stmt,"s", $username); //s placeholder
           mysqli_stmt_execute($stmt);
           mysqli_stmt_store_result($stmt);
           $check = mysqli_stmt_num_rows($stmt);
@@ -48,7 +48,7 @@
               mysqli_stmt_execute($stmt);
               mysqli_stmt_store_result($stmt);
 
-              $sqlImg = "INSERT INTO profile (uname) VALUES ('$username')";
+              $sqlImg = "INSERT INTO profile (uname) VALUES ('$username')"; //pulling username var defined above and put into DB
               mysqli_query($conn, $sqlImg); //combines statements
 
               header("Location: ../signup.php?signup=success"); //produce success Message --DOESNT STORE

@@ -1,5 +1,5 @@
 .bg-cover {
-    background-image: url("/Users/leahcave/Desktop/lab/images/moreleaves.jpg");
+    background-image: url("../images/moreleaves.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;

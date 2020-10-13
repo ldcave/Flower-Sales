@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 require 'dbhandler.php';
-define('MB',1048576);
+define('MB', 1048576);          //set megabytes value
 
-if(isset($_POST['gallery-submit'])){
+if (isset($_POST['gallery-submit'])){
 
     $file = $_FILES['gallery-image'];
     $file_name = $file['name'];   
     $file_tmp_name = $file['tmp_name'];   
-    $file_error = $file['error'];     //this is defined in login helper? name is predefined
+    $file_error = $file['error'];     
     $file_size = $file['size'];
     
     $title = $_POST['title'];
@@ -33,7 +33,7 @@ if(isset($_POST['gallery-submit'])){
     }
     else{
         $new_name = uniqid('',true).".".$ext; //this is new name
-        $destination = '../product/'.$new_name;
+        $destination = '../prints/'.$new_name;
 
         $sql = "INSERT INTO prints (title, descript, picpath) VALUES (?,?,?)"; 
         $stmt = mysqli_stmt_init($conn);
@@ -42,7 +42,7 @@ if(isset($_POST['gallery-submit'])){
             header("Location: ../login.php?error=SQLInjection");
             exit();
         }else{
-            mysqli_stmt_bind_param($stmt,"sss", $title, $descript, $new_name); //s placeholder
+            mysqli_stmt_bind_param($stmt, "sss", $title, $description, $new_name); //s placeholder
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
 

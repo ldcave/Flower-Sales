@@ -18,7 +18,7 @@
         font-family: "Lucida Console", Courier, monospace;
         font-weight: bold;
     }
-    
+
     </style>
     
     <script>
@@ -33,7 +33,7 @@
                 reader.onload = function(e){
                     document.querySelector('#prof-display').setAttribute('src',e.target.result); //set path equal to upload input
                 }
-                reader.readAsDataURL(e.files[0]);
+                reader.readAsDataURL(e.files[0]); //returns url for the photo were uploading
     
             }
         }
@@ -43,15 +43,15 @@
     <div class="my-auto">
         <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <img src="#" onclick="triggered();" id="proof-display">
-                <label for="prof-image" id="uname-style">Dummy Texttt</label>
+                <img src="#" onclick="triggered();" id="prof-display">
+                <label for="prof-image" id="uname-style">Dummy Texttt</label> 
                 <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none;">
             </div>
             <div class="form-group">
                 <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio!" style="text-align: center;"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" name="proof-submit" class="btn btn-outline-success btn-lg btn-block">upload</button>
+                <button type="submit" name="prof-submit" class="btn btn-outline-success btn-lg btn-block">upload</button>
             </div>
         </form>
     </div>
