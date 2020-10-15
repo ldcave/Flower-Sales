@@ -1,4 +1,5 @@
 h1 {
+  font-family: 'didot';
     text-align: center;
 }
 
@@ -17,6 +18,7 @@ img{
 }
 
 .gallery-container{
+  font-family: 'didot';
    text-align: center;
    display: flex;
    flex-direction: row;
@@ -25,6 +27,7 @@ img{
 }
 
 .card {
+  font-family: 'didot';
   border-radius: 10px;
   margin: 10px; 
   width: 20%;
@@ -34,13 +37,15 @@ img{
 
 }
 .gallery-container a{
-    background-color: rgb(211, 233, 241);
+    font-family: 'didot';
+    background-color: rgba(206, 187, 174, 0.5);
     background-position: center;
     background-size: cover;
+    border-radius: 2%;
 
 }
 
 .gallery-container a:hover{
     opacity: 90%;
-    text-decoration-color: rgb(77, 120, 199);
+    text-decoration-color: rgba(11, 37, 25, 0.493);
 }

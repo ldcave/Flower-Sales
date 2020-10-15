@@ -1,5 +1,5 @@
 <?php
-  require 'includes/header.php'
+  require 'includes/header.php';
 ?>
 <main>
 <link rel="stylesheet" href="../css/about.css">
@@ -14,7 +14,7 @@
                 <div class = "container"></div>
               <h2>Lana</h2>
 
-                <p style= "border:1px; border-style:double; border-color:#cfe0fc; padding: 0"><br> <b>Panama City, FL</b></p>
+                <p style= "border:1px; border-style:double; border-color:#cfe0fc; padding: 0; border-radius: 10%;"><br> <b>Panama City, FL</b></p>
                 <button type="button">More</button>
             </div>    
         </div>

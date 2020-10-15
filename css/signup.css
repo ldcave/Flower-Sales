@@ -8,6 +8,9 @@
 }
 
 .container {
+    background-color: rgba(94, 156, 94, 0.671);
+    padding: 25px;
+    border-radius: 5px;
    
 width: 50%;
 }
@@ -20,7 +23,7 @@ width: 50%;
 
 .signup-form {
     border-radius: 50px;
-    background-color: #d5d5d5;
+    background-color: #ffffffad;
     padding: 20px;
     text-align: center;
 }

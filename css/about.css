@@ -1,19 +1,22 @@
 body{
-  font-family: 'didot';
   text-align: center;
 }
+
 .about{
-  background: white;
+  background: rgba(77, 6, 6, 0.384);
   justify-content: center;
  }
+
  .button{
    padding: 15px 32px;
  }
 
  img{
-   height: 100px;
-   width: 100px;
+  max-width: 220px;
+  height: 210px;
+  margin-top:10px;
  }
+ 
  .column{
   float: left;
   margin-right: 20px;
@@ -21,13 +24,15 @@ body{
 
  }
  .card{
-  box-shadow: 0px 9px 9px 0px #cfe0fc;
-  padding: 0px 20px
+  box-shadow: 0px 9px 9px 0px #9eca23;
+  padding: 0px 20px;
+  height: auto;
  }
 
- .nav-item{
-    background-color: #dde4f0;
- }
+
  .container{
+  background: rgb(51, 180, 101);
+  display: flex;
    text-align: center;
+   justify-content: center;
  }

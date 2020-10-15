@@ -23,7 +23,6 @@ if (isset($_SESSION['uid'])){ //as long as nothing is null go to profile--assumi
     }
     #prof-display {
         display: block;
-        
         width: 150px;
         margin: 10px auto;
         border-radius: 50%;
@@ -31,7 +30,7 @@ if (isset($_SESSION['uid'])){ //as long as nothing is null go to profile--assumi
     
     #uname-style {
         font-size: 20px;
-        font-family: "Lucida Console", Courier, monospace;
+        font-family: "didot", Courier, monospace;
         font-weight: bold;
     }
     
@@ -67,7 +66,7 @@ if (isset($_SESSION['uid'])){ //as long as nothing is null go to profile--assumi
                 <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio!" style="text-align: center;"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" name="prof-submit" class="btn btn-outline-success btn-lg btn-block">upload</button>
+                <button type="submit" name="prof-submit" class="btn btn-outline-dark btn-sm btn-block">upload</button>
             </div>
         </form>
     </div>
