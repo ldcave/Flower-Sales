@@ -36,7 +36,7 @@ require 'display-reviews.php';
 <script type="text/javascript">
 
 var rateIndex = -1;             //no rating initially
-var id = <?php echo '$_GET['id']?'>;      //get the id from global variable GET and store into
+var id = <?php echo $_GET['id']?>;      //get the id from global variable GET and store into
 $(document).ready(function() {
     reset_star();
 
