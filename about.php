@@ -9,9 +9,9 @@
     </div>
     <div class = "row">
         <div class = "column">
-            <div class = "card">
-              <img src = "images/audrey.jpg">
-                <div class = "container"></div>
+            <div class= "card">
+              <img src="images/audrey.jpg">
+                <div class="container"></div>
               <h2>Lana</h2>
 
                 <p style= "border:1px; border-style:double; border-color:#cfe0fc; padding: 0; border-radius: 10%;"><br> <b>Panama City, FL</b></p>

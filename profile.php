@@ -25,7 +25,7 @@ if (isset($_SESSION['uid'])){ //as long as nothing is null go to profile--assumi
         display: block;
         width: 150px;
         margin: 10px auto;
-        border-radius: 50%;
+        border-radius: 10%;
     }
     
     #uname-style {
@@ -63,7 +63,7 @@ if (isset($_SESSION['uid'])){ //as long as nothing is null go to profile--assumi
                 <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none;">
             </div>
             <div class="form-group">
-                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio!" style="text-align: center;"></textarea>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio!" style="text-align: center; border-radius:3%;"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" name="prof-submit" class="btn btn-outline-dark btn-sm btn-block">upload</button>
