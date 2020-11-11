@@ -2,6 +2,7 @@
 require 'includes/dbhandler.php';
 require 'includes/header.php'; 
 require 'includes/review-helper.php';
+require 'display-reviews.php';
 ?>
 
 <main>
@@ -34,8 +35,8 @@ require 'includes/review-helper.php';
 
 <script type="text/javascript">
 
-var rateIndex = -1; //no rating initially
-var id = <?php echo $_GET['id']?>;
+var rateIndex = -1;             //no rating initially
+var id = <?php echo '$_GET['id']?'>;      //get the id from global variable GET and store into
 $(document).ready(function() {
     reset_star();
 

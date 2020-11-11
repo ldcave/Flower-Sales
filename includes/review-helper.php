@@ -2,7 +2,8 @@
 require_once 'dbhandler.php';
 date_default_timezone_set('UTC');
 
-if(isset($_POST['review-submit'])){
+/** Has the review button been clicked? if so, get all data and put in db.  WORKS**/
+if(isset($_POST['review-submit'])){ 
     session_start();
     $uname = $_SESSION['username'];
     $title = $_POST['review-title'];
