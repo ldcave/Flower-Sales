@@ -2,7 +2,7 @@
 
 $servename = "127.0.0.1";
 $DBuname = "root";
-$DBPass = "";
+$DBPass = "mysql123";
 $DBname = "cs230";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
