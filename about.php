@@ -4,13 +4,13 @@
 <main>
 <link rel="stylesheet" href="../css/about.css">
     <div class = "about">
-        <h1 style = "color:#718ebd" >who are we</h1>
+        <h1 style = "color:#718ebd">who are we</h1>
         <p>❁ meet our people ❁</p>
     </div>
     <div class = "row">
         <div class = "column">
             <div class= "card">
-              <img src="images/audrey.jpg">
+              <img src="images/audrey.jpg" style="max-width: 220px;">
                 <div class="container"></div>
               <h2>Lana</h2>
 
