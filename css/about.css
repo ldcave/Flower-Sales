@@ -1,9 +1,17 @@
 body{
   text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: 'didot';
+  
+}
+
+.row{
+  justify-content: center;
 }
 
 .about{
-  background: rgba(77, 6, 6, 0.384);
+  background: rgba(194, 150, 150, 0.267);
   justify-content: center;
  }
 
@@ -24,14 +32,15 @@ body{
 
  }
  .card{
-  box-shadow: 0px 9px 9px 0px #9eca23;
+   display: flex;
+  box-shadow: 0px 9px 9px 0px #84bfd1;
   padding: 0px 20px;
   height: auto;
+  width: 210px;
  }
-
 
  .container{
   display: flex;
-   text-align: center;
-   justify-content: center;
+  text-align: center;
+  justify-content: center;
  }

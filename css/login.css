@@ -14,11 +14,11 @@
 
 .container {
   text-align: center;
-  background-color: rgba(100, 21, 21, 0);
+  /* background-color: rgba(100, 21, 21, 0); */
 }
 
 .form-signin{
-  background-color: #8ea8b9d8;
+  background-color: #f5cb95d8;
   border-radius: 50px;
   padding: 20px;
   text-align: center;
