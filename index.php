@@ -12,7 +12,7 @@
             <div class= "card">
               <img src="images/audrey.jpg";>
                 <div class="container"></div>
-              <h2>this is a test</h2>
+              <h2>Lisa</h2>
                 <p>Martinsburg, WV</p>
                 <button type="button">More</button>
             </div>    
